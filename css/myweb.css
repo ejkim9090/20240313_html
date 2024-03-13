@@ -119,15 +119,16 @@ article{
 article:last-child{
     margin-bottom: 0;
 }
-ul{
+nav > ul{
     /* float 의 부모노드 overflow hidden */
     overflow: hidden;
 }
-ul > li {
+nav > ul > li {
     /* display: inline-block; li요소 사이줄바꿈으로 한칸띄워쓰기문제 */
     /* float */
     float: left;
     /* padding: 5px;  내부 a 태그에 padding 넣기*/
+    /* padding: 5px; */
     /* border: 1px solid black; */
 }
 nav > ul > li > a {
@@ -158,7 +159,7 @@ nav.bnb, .logo {
     clear: both;
 }
 
-a {
+nav a {
     display: inline-block;
     padding: 10px;
     text-decoration: none;
@@ -176,8 +177,35 @@ a:active {
 } 
 */
 
-a:hover {
+nav a:hover {
     color: white;
     background-color: black;
 }
+
+.tab-item > ul > li > a > div:first-child{
+    /*  */
+    float: left;
+    width: 45px;
+    margin-right: 10px;
+}
+.tab-item > ul > li > a > div:last-child{
+    float: left;
+    width: 120px;
+}
+.tab-item > ul > li  {
+    padding: 10px;
+    clear: both;
+}
+.tab-item > ul > li   {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
 
