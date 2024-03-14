@@ -31,7 +31,9 @@ header div.logo {
 
 /* li-a 링크 padding, border , background*/
 header a {
+    /* 원래 inline -> inline-block 이유 : width,height,padding,margin */
     display: inline-block;
+
     border: 1px solid black;
 }
 header li:first-child > a {
