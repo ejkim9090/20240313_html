@@ -50,3 +50,7 @@ section article.article-2 div.grid-3  > div {
 }
 
 
+section .flex-card-item{
+    display: flex;
+}
+
