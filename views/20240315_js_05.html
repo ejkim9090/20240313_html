@@ -18,27 +18,32 @@
     var b = 20;
     console.log(a + b);  // 30
 
-    // var c = window.prompt("숫자를 입력하세요");  // prompt()를 통해 입력 받은 값은 문자입니다.
-    // console.log(typeof(c));  // string 
-    // /* 
-    // >, < 크기 연산자시 number > number 로 비교해야 합니다.
-    //  */
-    // c = Number.parseInt(c);  // number 형태로 변경후 다시 c 대입해주고
-    // if( c > 100 ) {  
-    //     var resultText = typeof(c) + "형태 "+ c + "는 100보다 크다";
-    // } else {
-    //     var resultText = typeof(c) + "형태 "+ c + "는 100보다 작다";
-    // }
-    // console.log(resultText);
-    // document.getElementById("result").innerHTML = resultText;
+    var c = window.prompt("숫자를 입력하세요");  // prompt()를 통해 입력 받은 값은 문자입니다.
+    console.log(typeof(c));  // string 
+    /* 
+    >, < 크기 연산자시 number > number 로 비교해야 합니다.
+     */
+    c = Number.parseInt(c);  // number 형태로 변경후 다시 c 대입해주고
+    if( c > 100 ) {  
+        var resultText = typeof(c) + "형태 "+ c + "는 100보다 크다";
+    } else {
+        var resultText = typeof(c) + "형태 "+ c + "는 100보다 작다";
+    }
+    console.log(resultText);
+    document.getElementById("result").innerHTML = resultText;
 
-    console.log("a"<"b" ? "1":"2");
 
+    ///////// 문자 비교 가능
+    console.log("a"<"b" ? "1":"2");  // 1
+    console.log("a">"b" ? "1":"2");  // 2
+
+    ///////// 문자 숫자 비교 불가  --> 모두 false
     console.log("a"<5 ? "1":"2");
     console.log("a"<100 ? "1":"2");
     console.log(("a">100) ? "1":"2");
     console.log((100>"a") ? "1":"2");
     console.log((100<"a") ? "1":"2");
+
     </script>    
 </body>
 </html>
