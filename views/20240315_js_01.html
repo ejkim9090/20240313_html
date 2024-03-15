@@ -18,6 +18,21 @@
     <h1 class="c2">JavaScript 처음3</h1>
 
     <script>
+        // object 집중적
+        var a15 = {k1:1, k2:"s"};
+        console.log(a15);
+        a15.k3 = "a15에 새로 key k3 생성하고 값";
+        console.log(a15);
+        a15.k2 = "a15에 기존 key k2에 값 바꿈";
+        console.log(a15);
+
+        a16 = "a16은 앞에 window. 생략. 즉 window에 기존key a16이 없다면 생성, 있었다면 값 바꿈";
+        console.log(a16);
+
+        //window.alert("window객체의 alert라는 함수/메소드를 호출함.");
+        //alert("window객체명 생략하고 접근 가능함.");
+        window.document.getElementById("id2");// 에서 window생략
+        console.log(typeof(window));
         // 자료형
         var a8 ;// true // 223.23 //"sdf" // null(object)
         console.log(typeof(a8));  // undefined 선언,값없으면
@@ -25,7 +40,7 @@
         console.log(typeof(a8));  // 대입한 값에 따라서 자료형이 바뀜
         //object
         var a9 = {k1 : 123
-            ,name:"홍길동"
+            , name:"홍길동"
             , gender:"f"
             , score: {kor:100, eng:90, math:70}
             , a14 : function(){ 
@@ -42,7 +57,7 @@
         console.log(a9);
         console.log(a9.k1);
         console.log(a9.score.math);
-        console.log(a9.a14);  // a14의 값 = 코드자체
+        console.log(a9.a14);  // a14의 값 =  function코드자체
         console.log(a9.a14());  // a14함수실행 + 그결과 뿌려달라
         //function
         // 함수정의
@@ -85,6 +100,7 @@
         // var a7 = document.querySelectorAll(".c2");
         // console.log(a7);
         // console.log(a7[0]);
+
     </script>
 
     <script>
