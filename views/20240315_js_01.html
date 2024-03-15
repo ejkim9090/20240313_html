@@ -18,19 +18,73 @@
     <h1 class="c2">JavaScript 처음3</h1>
 
     <script>
-        
-        var a3 = document.getElementById("id2");
-        console.log(a3);
-        var a4 = document.getElementsByClassName("c2");
-        console.log(a4);
-        var a5 = document.getElementsByTagName("h1");
-        console.log(a5);
-        var a6 = document.querySelector(".c2");
-        console.log(a6);
-        var a7 = document.querySelectorAll(".c2");
-        console.log(a7);
-        console.log(a7[0]);
+        // 자료형
+        var a8 ;// true // 223.23 //"sdf" // null(object)
+        console.log(typeof(a8));  // undefined 선언,값없으면
+        a8 = false;
+        console.log(typeof(a8));  // 대입한 값에 따라서 자료형이 바뀜
+        //object
+        var a9 = {k1 : 123
+            ,name:"홍길동"
+            , gender:"f"
+            , score: {kor:100, eng:90, math:70}
+            , a14 : function(){ 
+                    console.log("a14=========");
+                    console.log("function 형태 a14의 값");
+                    console.log("키명=변수명a14이 function명이 됩니다");
+                    console.log(1020*382);
+                    // return 23*222;
+                    //return "aa";
+                    return a9;
+                }
+            };
+        console.log(typeof(a9));
+        console.log(a9);
+        console.log(a9.k1);
+        console.log(a9.score.math);
+        console.log(a9.a14);  // a14의 값 = 코드자체
+        console.log(a9.a14());  // a14함수실행 + 그결과 뿌려달라
+        //function
+        // 함수정의
+        var a10 = function(){ 
+            console.log("a10=========");
+            console.log("function 형태 변수 선언");
+            console.log("변수명이 function명이 됩니다");
+            console.log(1020*382);
+            // return 23*222;
+            //return "aa";
+            return a9;
+        };
+        console.log(typeof(a10));
+        console.log(a10);
+        // 함수실행
+        a10();
+        var a11 = a10();
+        console.log(a10());
 
+        function a12(){
+            console.log("a12=========");
+            console.log("function 정의함.");
+            console.log("자바와동일한 위치에 함수명이 있습니다.");
+            console.log(1020*382);
+            return 23*222;
+        }
+        // 함수실행
+        a12();
+        var a13 = a12();
+        console.log(a12());
+
+        // var a3 = document.getElementById("id2");
+        // console.log(a3);
+        // var a4 = document.getElementsByClassName("c2");
+        // console.log(a4);
+        // var a5 = document.getElementsByTagName("h1");
+        // console.log(a5);
+        // var a6 = document.querySelector(".c2");
+        // console.log(a6);
+        // var a7 = document.querySelectorAll(".c2");
+        // console.log(a7);
+        // console.log(a7[0]);
     </script>
 
     <script>
