@@ -25,8 +25,9 @@
     console.log(result);
     </script>
     <script>
-    // var a1 = 0/10;  // 0
-    // console.log(a1);console.log(typeof a1);
+    var a1 = 0/10;  // 0
+    console.log(a1);console.log(typeof a1);
+    console.log(isFinite(a1));  // false
     var a1 = 10/0;  // Infinity 라는 값
     // console.log(a1);console.log(typeof a1);
     // var a1 = 0/0;  // NaN
@@ -45,12 +46,20 @@
 
     var a2 = a1 + a1;// Infinity + Infinity ==== Infinity
     console.log(a2); 
+    console.log(isFinite(a2)); // false
+    console.log(isNaN(a2));  // false
     var a2 = a1 - a1;// Infinity - Infinity ==== NaN
     console.log(a2); 
+    console.log(isFinite(a2));  // false
+    console.log(isNaN(a2));  // true
     var a2 = a1 * a1;// Infinity * Infinity ==== Infinity
     console.log(a2); 
     var a2 = a1 / a1;// Infinity / Infinity ==== NaN
-    console.log(a2); 
+    console.log(a2);   
+
+
+
+
 
     </script>
     <h1 id="question">입력한 값은 100보다 큰가? 작은가?</h1>
@@ -86,7 +95,9 @@
         var arr = [];
         var count = 0;
         // num3 + 1 == num3은 string 형태로 + 가 연결자로 사용됨. 
-        num3 = Number.parseInt(num3);
+        // num3 = Number.parseInt(num3, 16);
+        num3 = Number.parseInt(num3, 10);
+        console.log(num3);
         for (var i = 1; i < num3 + 1; i++) {
             if (i % 3 == 0) {
                 arr[count] =i;

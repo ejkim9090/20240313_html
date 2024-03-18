@@ -18,14 +18,15 @@
         var a3 = [];// array 는 object 자료형
         console.log(typeof a3);  
         // a3[0]="a";
-        // a3[1]="b";
+        // a3[1]=123;
         // a3.push("a");
-        // a3.push("b");
+        // a3.push(function(){console.log(a3의 내부 함수);});
         console.log(a3);
-        var a3 = {};  // object 자료형
+        var a3 = { "k 3": "이름띄워쓰기"};  // object 자료형
         console.log(typeof a3);  
         a3.k1 = "v1";  // ojbect key :  value 넣는 방법 1
         a3["k2"] = "v2"; // ojbect key :  value 넣는 방법 2
+        delete(a3.k1);
         console.log(a3);
         for( var key in a3 ){
             console.log(a3[key]);  // 방법 2만 가능함. 방법 1 불가함.
