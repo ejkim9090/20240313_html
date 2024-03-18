@@ -15,11 +15,27 @@
         var a1 = true;  
         var a2 = 1; 
         console.log((a1==a2)? "==같다":  "==다르다");
-        a2 = "aaa";
-        if(a2){
-            console.log("a2가 true임")
+        var a3 = [];// array 는 object 자료형
+        console.log(typeof a3);  
+        // a3[0]="a";
+        // a3[1]="b";
+        // a3.push("a");
+        // a3.push("b");
+        console.log(a3);
+        var a3 = {};  // object 자료형
+        console.log(typeof a3);  
+        a3.k1 = "v1";  // ojbect key :  value 넣는 방법 1
+        a3["k2"] = "v2"; // ojbect key :  value 넣는 방법 2
+        console.log(a3);
+        for( var key in a3 ){
+            console.log(a3[key]);  // 방법 2만 가능함. 방법 1 불가함.
+        }
+
+
+        if(a3){
+            console.log("문자열, 음수, 양수, 실수 - true임")
         } else {
-            console.log("a2값이 0인 경우 false")
+            console.log("0, undefined, null, NaN , ''빈문자 - false")
         }
 
         var arr = ["apple","banana"];
